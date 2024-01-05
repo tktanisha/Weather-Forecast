@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="wrapper">
+
+<h1> WEATHER APP</h1>
+
+<div class="tab-container">
+    <div class="tab" data-userWeather><h3>Your weather</h3></div>
+    <div class="tab" data-searchWeather><h3>Search Weather</h3></div>
+</div>
+
+
+<div class="weather-container"> 
+
+<!-- grant location container -->
+<div class="sub-container grant-location-container">
+    <img src="image/location.png" alt="location" width="80" height="80" loading="lazy">
+    <p>grant location Access</p>
+    <p>Allow Access to get weather Information</p>
+    <button class="btn" data-grantAccess>Grant Access</button>
+</div>
+
+
+<!-- search city form -->
+<form class="form-container" data-searchForm>
+    <input placeholder="Search for city..." data-searchInput>
+    <button class="btn" type="submit">
+        <img src="image/search.png" alt="" width="20" height="20" loading="lazy">
+    </button>
+</form>
+
+
+<!-- loading screen container -->
+<div class="loading-container">
+    <img src="image/loading.gif" alt="loading...." width="150" height="150">
+    <p>loading</p>
+</div>
+
+
+ <!-- show-weather info -->
+ <div class=" sub-container user-info-container">
+ 
+    <div class="name">
+    <p data-cityname></p>
+    <img data-countryIcon src="" alt="country icon" >
+    </div>
+
+
+    <!-- weather description -->
+     <p data-weatherDesc></p>
+
+    <img data-weatherIcon src="" alt="">
+
+    <p data-temp></p>
+    
+    <!-- 3 cards parameters -->
+<div class="parameter-container">
+    
+        <!-- card 1 -->
+    <div class="parameter">
+        <img src="image/wind.png" alt="windspeed" loading="lazy">
+        <p>WINDSPEED</p>
+        <p data-windspeed></p>
+    </div>
+
+    <!-- card 2 -->
+    <div class="parameter">
+        <img src="image/humidity.png" alt="humid" loading="lazy">
+        <p>HUMIDITY</p>
+        <p data-humidity></p>
+    </div>
+    
+    <!-- card 3 -->
+    <div class="parameter">
+        <img src="image/Cloud-icon-removebg-preview.png" alt="clouds"  loading="lazy">
+        <p>CLOUDS</p>
+        <p data-cloudiness></p>
+    </div>
+</div>
+
+    </div>
+</div>
+</div>
+
+     
+
+     <script src="https://kit.fontawesome.com/6c3c80e870.js" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6c3c80e870.js" crossorigin="anonymous"></script>
+    <script src="index.js "></script>
+</body>
+</html>
